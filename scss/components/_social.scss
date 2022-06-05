@@ -1,0 +1,43 @@
+/* иконки команды */
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--brand-color);
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--element-color);
+    }
+}
+
+.social__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+
+.social__link:hover .social__iconc,
+.social__link:focus .social__iconc {
+    fill: var(--brand-color);
+}
+
+.social__iconc {
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
+}

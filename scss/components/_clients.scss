@@ -1,0 +1,60 @@
+/* постоянные клиенты */
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--body-color);
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition-property: border;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
+
+    outline: transparent;
+
+    &:hover,
+    &:focus {
+        border-color: var(--element-color);
+    }
+}
+
+.clients-list__link:hover .clients-list__iconc,
+.clients-list__link:focus .clients-list__iconc {
+    fill: var(--element-color);
+}
+
+.clients-list__iconc {
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
+}
+

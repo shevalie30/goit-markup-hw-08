@@ -1,0 +1,47 @@
+/* наши особиности */
+
+.chip {
+    padding-top: 94px;
+}
+
+.chip__title {
+    display: none;
+}
+
+.chip-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chip-list__iconc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background: var(--background-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.chip-list__item {
+    width: 270px;
+}
+
+.chip-list__title {
+    margin-bottom: 10px;
+}
+
+.chip-list__title {
+    font-weight: 700;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.chip-list__team {
+    font-size: var(--font-size);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--team-color);
+}
