@@ -1,7 +1,13 @@
 /* наши особиности */
 
 .chip {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .chip__title {
@@ -11,6 +17,29 @@
 .chip-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-left: calc(-1 * var(--gallery-list-gap));
+  margin-top: calc(-1 * var(--gallery-list-gap));
+}
+
+.chip-list > .chip-list__item {
+  flex-basis: calc(100% / 1 - var(--gallery-list-gap));
+  margin-top: var(--gallery-list-gap);
+  margin-left: var(--gallery-list-gap);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - var(--gallery-list-gap));
+    margin-top: var(--gallery-list-gap);
+    margin-left: var(--gallery-list-gap);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - var(--gallery-list-gap));
+    margin-top: var(--gallery-list-gap);
+    margin-left: var(--gallery-list-gap);
+  }
 }
 
 .chip-list__iconc {
@@ -23,12 +52,13 @@
   margin-bottom: 30px;
 }
 
-.chip-list__item {
-  width: 270px;
-}
-
 .chip-list__title {
   margin-bottom: 10px;
+  text-align: center;
+
+  @media screen and(min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .chip-list__title {

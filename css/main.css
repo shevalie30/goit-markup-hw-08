@@ -52,11 +52,28 @@ ul {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
 
 .header {
@@ -211,6 +228,7 @@ ul {
 }
 
 .hero {
+  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -637,7 +655,15 @@ ul {
 
 /* наши особиности */
 .chip {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .chip {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .chip__title {
@@ -651,6 +677,37 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-left: calc(-1 * var(--gallery-list-gap));
+  margin-top: calc(-1 * var(--gallery-list-gap));
+}
+
+.chip-list > .chip-list__item {
+  -ms-flex-preferred-size: calc(100% / 1 - var(--gallery-list-gap));
+      flex-basis: calc(100% / 1 - var(--gallery-list-gap));
+  margin-top: var(--gallery-list-gap);
+  margin-left: var(--gallery-list-gap);
+}
+
+@media screen and (min-width: 768px) {
+  .chip-list > .chip-list__item {
+    -ms-flex-preferred-size: calc(100% / 2 - var(--gallery-list-gap));
+        flex-basis: calc(100% / 2 - var(--gallery-list-gap));
+    margin-top: var(--gallery-list-gap);
+    margin-left: var(--gallery-list-gap);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .chip-list > .chip-list__item {
+    -ms-flex-preferred-size: calc(100% / 4 - var(--gallery-list-gap));
+        flex-basis: calc(100% / 4 - var(--gallery-list-gap));
+    margin-top: var(--gallery-list-gap);
+    margin-left: var(--gallery-list-gap);
+  }
 }
 
 .chip-list__iconc {
@@ -669,12 +726,15 @@ ul {
   margin-bottom: 30px;
 }
 
-.chip-list__item {
-  width: 270px;
-}
-
 .chip-list__title {
   margin-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .chip-list__title {
+    text-align: left;
+  }
 }
 
 .chip-list__title {
@@ -693,27 +753,41 @@ ul {
 }
 
 /*  работа */
-.job {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .job {
+    padding-bottom: 94px;
+  }
 }
 
 .job-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .job-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .job__title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .job__title {
+    display: block;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }
 
 .job-list__foto {
@@ -754,8 +828,15 @@ ul {
 /* команда */
 .team {
   background-color: var(--background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__title {
@@ -774,6 +855,37 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-left: calc(-1 * var(--gallery-list-gap));
+  margin-top: calc(-1 * var(--gallery-list-gap));
+}
+
+.team-list > .team-list__item {
+  -ms-flex-preferred-size: calc(100% / 1 - var(--gallery-list-gap));
+      flex-basis: calc(100% / 1 - var(--gallery-list-gap));
+  margin-top: var(--gallery-list-gap);
+  margin-left: var(--gallery-list-gap);
+}
+
+@media screen and (min-width: 768px) {
+  .team-list > .team-list__item {
+    -ms-flex-preferred-size: calc(100% / 2 - var(--gallery-list-gap));
+        flex-basis: calc(100% / 2 - var(--gallery-list-gap));
+    margin-top: var(--gallery-list-gap);
+    margin-left: var(--gallery-list-gap);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list > .team-list__item {
+    -ms-flex-preferred-size: calc(100% / 4 - var(--gallery-list-gap));
+        flex-basis: calc(100% / 4 - var(--gallery-list-gap));
+    margin-top: var(--gallery-list-gap);
+    margin-left: var(--gallery-list-gap);
+  }
 }
 
 .team-list__title {

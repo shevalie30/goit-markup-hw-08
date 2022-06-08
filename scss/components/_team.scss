@@ -1,53 +1,81 @@
 /* команда */
 
 .team {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and(min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
 }
 
 .team__title {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .team-list {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-left: calc(-1 * var(--gallery-list-gap));
+  margin-top: calc(-1 * var(--gallery-list-gap));
+}
+
+.team-list > .team-list__item {
+  flex-basis: calc(100% / 1 - var(--gallery-list-gap));
+  margin-top: var(--gallery-list-gap);
+  margin-left: var(--gallery-list-gap);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - var(--gallery-list-gap));
+    margin-top: var(--gallery-list-gap);
+    margin-left: var(--gallery-list-gap);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - var(--gallery-list-gap));
+    margin-top: var(--gallery-list-gap);
+    margin-left: var(--gallery-list-gap);
+  }
 }
 
 .team-list__title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 
 .team-list__title {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .team-list__item {
-    background-color: var(--brand-color);
+  background-color: var(--brand-color);
 }
 
 .team-list__team {
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-    color: var(--team-color);
-    margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--team-color);
+  margin-bottom: 16px;
 }
 
 .team-list__name {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
