@@ -1312,6 +1312,24 @@ ul {
   padding-right: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container-box {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-box {
+    width: 738px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-box {
+    width: 1170px;
+  }
+}
+
 .footer-content {
   margin-right: 70px;
 }
