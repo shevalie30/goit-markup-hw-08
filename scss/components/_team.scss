@@ -28,6 +28,10 @@
   padding: 0;
   margin-left: calc(-1 * var(--gallery-list-gap));
   margin-top: calc(-1 * var(--gallery-list-gap));
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .team-list > .team-list__item {

@@ -863,6 +863,13 @@ ul {
   margin-top: calc(-1 * var(--gallery-list-gap));
 }
 
+@media screen and (min-width: 1200px) {
+  .team-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .team-list > .team-list__item {
   -ms-flex-preferred-size: calc(100% / 1 - var(--gallery-list-gap));
       flex-basis: calc(100% / 1 - var(--gallery-list-gap));
@@ -980,8 +987,15 @@ ul {
 
 /* постоянные клиенты */
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__title {
@@ -998,16 +1012,47 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-left: calc(-1 * var(--gallery-list-gap));
+  margin-top: calc(-1 * var(--gallery-list-gap));
 }
 
-.clients-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.clients-list > .clients-list__item {
+  -ms-flex-preferred-size: calc(100% / 2 - var(--gallery-list-gap));
+      flex-basis: calc(100% / 2 - var(--gallery-list-gap));
+  margin-top: var(--gallery-list-gap);
+  margin-left: var(--gallery-list-gap);
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list > .clients-list__item {
+    -ms-flex-preferred-size: calc(100% / 3 - var(--gallery-list-gap));
+        flex-basis: calc(100% / 3 - var(--gallery-list-gap));
+    margin-top: var(--gallery-list-gap);
+    margin-left: var(--gallery-list-gap);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list > .clients-list__item {
+    -ms-flex-preferred-size: calc(100% / 6 - var(--gallery-list-gap));
+        flex-basis: calc(100% / 6 - var(--gallery-list-gap));
+    margin-top: var(--gallery-list-gap);
+    margin-left: var(--gallery-list-gap);
+  }
 }
 
 .clients-list__link {
@@ -1020,7 +1065,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
