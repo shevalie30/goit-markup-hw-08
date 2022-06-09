@@ -1,90 +1,107 @@
 /* рассылка подвал */
 
 .mailing-list {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
     margin-left: auto;
+  }
 }
 
 .mailing-title {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: var(--line-height);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: var(--line-height);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-    color: var(--brand-color);
+  color: var(--brand-color);
 }
 
 .mailing-form {
-    display: flex;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .mailing-input {
+  width: 450px;
+  padding: 16px 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: transparent;
+  background-color: transparent;
+  color: var(--brand-color);
+  transition-property: border;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  &:focus,
+  &:hover {
+    border: 1px solid var(--brand-color);
+  }
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and(min-width: 1200px) {
     width: 358px;
-    padding: 16px 15px;
     margin-right: 12px;
-
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    outline: transparent;
-    background-color: transparent;
-    color: var(--brand-color);
-    transition-property: border;
-    transition-duration: var(--duration);
-    transition-timing-function: var(--timing-function);
-
-    &:focus,
-    &:hover {
-        border: 1px solid var(--brand-color);
-    }
+    margin-bottom: 0;
+  }
 }
 
-
-
 .mailing-submit-btn {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    padding: 10px 29px;
+  padding: 10px 29px;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
 
-    letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
 
-    color: var(--brand-color);
+  color: var(--brand-color);
 
-    background: var(--element-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    outline: transparent;
-    cursor: var(--cursor);
+  background: var(--element-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: transparent;
+  cursor: var(--cursor);
 
-    transition-property: color;
-    transition-duration: var(--duration);
-    transition-timing-function: var(--timing-function);
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 
-    &:hover,
-    &:focus {
-        color: var(--hover-color);
-    }
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
 }
 
 .mailing-iconc {
-    margin-left: 10px;
-    fill: var(--brand-color);
-    outline: transparent;
-    transition-property: fill;
-    transition-duration: var(--duration);
-    transition-timing-function: var(--timing-function);
+  margin-left: 10px;
+  fill: var(--brand-color);
+  outline: transparent;
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .mailing-submit-btn:hover .mailing-iconc,
 .mailing-submit-btn:focus .mailing-iconc {
-    fill: var(--hover-color);
+  fill: var(--hover-color);
 }
-

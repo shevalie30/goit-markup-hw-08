@@ -1293,23 +1293,37 @@ ul {
 .footer-logo {
   font-family: 'Raleway';
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 0.85;
   letter-spacing: 0.03em;
-  -webkit-text-decoration: var(--text-decoration);
-          text-decoration: var(--text-decoration);
+  text-align: center;
+  margin-bottom: 20px;
   color: var(--element-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .container-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
 }
 
 @media screen and (min-width: 480px) {
@@ -1327,16 +1341,58 @@ ul {
 @media screen and (min-width: 1200px) {
   .container-box {
     width: 1170px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
   }
 }
 
-.footer-content {
-  margin-right: 70px;
+.conteiner-tabl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner-tabl {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-content {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-content {
+    margin-right: 70px;
+  }
 }
 
 .footer-address {
   font-style: normal;
   margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    margin-bottom: 0;
+  }
 }
 
 .footer-address-text {
@@ -1373,12 +1429,26 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--brand-color);
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-title {
+    text-align: left;
+  }
 }
 
 .footer-list-iconc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-list-iconc {
+    margin-bottom: 0;
+  }
 }
 
 .item-iconc:not(:last-child) {
@@ -1434,7 +1504,19 @@ ul {
 
 /* рассылка подвал */
 .mailing-list {
-  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing-list {
+    margin-left: auto;
+  }
 }
 
 .mailing-title {
@@ -1451,15 +1533,30 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .mailing-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .mailing-input {
-  width: 358px;
+  width: 450px;
   padding: 16px 15px;
-  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1477,6 +1574,20 @@ ul {
 
 .mailing-input:focus, .mailing-input:hover {
   border: 1px solid var(--brand-color);
+}
+
+@media screen and (min-width: 480px) {
+  .mailing-input {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing-input {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .mailing-submit-btn {
