@@ -67,6 +67,12 @@
   background-color: var(--brand-color);
 }
 
+.team-list__foto {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .team-list__team {
   font-size: 16px;
   line-height: 1.18;

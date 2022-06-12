@@ -1,11 +1,14 @@
 .navigation-list {
-  display: flex;
-  align-items: center;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.navigation-item:not(:last-child),
-.list-item:not(:last-child) {
-  margin-bottom: 50px;
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .navigation-link {
@@ -46,7 +49,7 @@
 
 .navigation-link-activ::after {
   position: absolute;
-  bottom: -1px;
+  bottom: -4px;
   left: 0;
   content: '';
   display: block;
@@ -55,4 +58,8 @@
 
   background-color: var(--element-color);
   border-radius: 2px;
+
+  @media screen and (min-width: 1200px) {
+    bottom: -1px;
+  }
 }
