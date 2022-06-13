@@ -57,7 +57,7 @@
             >
           </li>
         </ul>
-        <button class="navigation__btn">
+        <button class="navigation__btn" type="button" data-menu-open>
           <svg class="navigation__iconc" width="40px" height="40px" aria-label="переключатель меню">
             <use class="iconc-menu" href="./img/sprates.svg#icon-menu"></use>
           </svg>
@@ -562,8 +562,8 @@
 
     <!-- мобильное миню -->
 
-    <!-- <div class="mobile is-hidden">
-      <button class="mobile__btn">
+     <div class="mobile is-hidden" data-menu>
+      <button class="mobile__btn" data-menu-close>
             <svg class="mobile__iconc" width="40px" height="40px" aria-label="переключатель меню">
               <use class="iconc__close" href="./img/sprates.svg#icon-close"></use>
             </svg>
@@ -601,7 +601,8 @@
           <a class="mobil-social__link" href="">LinkedIn</a>
         </li>
       </ul>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
