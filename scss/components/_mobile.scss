@@ -15,7 +15,13 @@
   border-bottom: 1px solid #ececec;
 }
 
-.mobile .is-hidden {
+.mobile .is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
