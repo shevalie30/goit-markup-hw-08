@@ -21,7 +21,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 450px;
+
   padding: 40px;
 
   background-color: var(--brand-color);
@@ -30,6 +31,14 @@
   border-radius: 4px;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 
 .close-btn {
@@ -77,9 +86,13 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 0.86;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .model-user {
@@ -171,7 +184,7 @@
 
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1, 16;
   letter-spacing: 0.01em;
 
   color: var(--team-color);
@@ -182,9 +195,6 @@
 }
 
 .checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 30px;
   position: relative;
 }
@@ -250,8 +260,35 @@
   transition-timing-function: var(--timing-function);
 }
 
+.checkbox-agreement {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1, 16;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+  }
+}
+
 .contract {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1, 16;
+  letter-spacing: 0.01em;
   color: #2196f3;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+  }
 }
 
 .submit-btn {
