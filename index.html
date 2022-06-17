@@ -136,7 +136,8 @@
             <li class="job-list__item">
               <img
                 class="job-list__foto"
-                src="./img/img_job/img.jpg"
+                srcset="img/img_job/img@1x.jpg, img/img_job/img@2x.jpg"
+                src="./img/img_job/img@1x.jpg"
                 alt="програмирование"
                 width="370"
                 height="294"
@@ -146,7 +147,8 @@
             <li class="job-list__item">
               <img
                 class="job-list__foto"
-                src="./img/img_job/img_1.jpg"
+                srcset="./img/img_job/img@1x-1.jpg, ./img/img_job/img@2x-1.jpg"
+                src="./img/img_job/img@1x-1.jpg"
                 alt="мобильный-разработки"
                 width="370"
                 height="294"
@@ -156,7 +158,8 @@
             <li class="job-list__item">
               <img
                 class="job-list__foto"
-                src="./img/img_job/img_2.jpg"
+                srcset="./img/img_job/img@1x-2.jpg, ./img/img_job/img@2x-2.jpg"
+                src="./img/img_job/img@1x-2.jpg"
                 alt="дизайн"
                 width="370"
                 height="294"
@@ -176,10 +179,19 @@
             <li class="team-list__item">
               <img
                 class="team-list__foto"
-                src="./img/img_masters/master-1_mb@1x.jpg"
+                srcset="
+                  ./img/img_masters/w/master-1_354.jpg 354w,
+                  ./img/img_masters/w/master-1_450.jpg 450w,
+                  ./img/img_masters/w/master-1_708.jpg 708w,
+                  ./img/img_masters/w/master-1_810.jpg 810w,
+                  ./img/img_masters/w/master-1_900.jpg 900w
+                "
+                sizes="(min-width: 1200) 810px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                src="./img/img_masters/w/master-1_450.jpg"
                 alt="игорь_демьяненко"
-                width=""
-                height=""
+                width="450px"
+                height="460px"
+                loading="lazy"
               />
               <div class="team-list__name">
                 <h3 class="team-list__title">Игорь Демьяненко</h3>
@@ -219,10 +231,19 @@
             <li class="team-list__item">
               <img
                 class="team-list__foto"
-                src="./img/img_masters/master-2_mb@1x.jpg"
+                srcset="
+                  ./img/img_masters/w/master-2_354.jpg 354w,
+                  ./img/img_masters/w/master-2_450.jpg 450w,
+                  ./img/img_masters/w/master-2_708.jpg 708w,
+                  ./img/img_masters/w/master-2_810.jpg 810w,
+                  ./img/img_masters/w/master-2_900.jpg 900w
+                "
+                sizes="(min-width: 1200) 810px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                src="./img/img_masters/master-2_450.jpg"
                 alt="ольга_репина"
-                width=""
-                height=""
+                width="450px"
+                height="460px"
+                loading="lazy"
               />
               <div class="team-list__name">
                 <h3 class="team-list__title">Ольга Репина</h3>
@@ -262,10 +283,19 @@
             <li class="team-list__item">
               <img
                 class="team-list__foto"
-                src="./img/img_masters/master-3_mb@1x.jpg"
+                srcset="
+                  ./img/img_masters/w/master-3_354.jpg 354w,
+                  ./img/img_masters/w/master-3_450.jpg 450w,
+                  ./img/img_masters/w/master-3_708.jpg 708w,
+                  ./img/img_masters/w/master-3_810.jpg 810w,
+                  ./img/img_masters/w/master-3_900.jpg 900w
+                "
+                sizes="(min-width: 1200) 810px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                src="./img/img_masters/master-3_450.jpg"
                 alt="николай_тарасов"
-                width=""
-                height=""
+                width="450px"
+                height="460px"
+                loading="lazy"
               />
               <div class="team-list__name">
                 <h3 class="team-list__title">Николай Тарасов</h3>
@@ -305,10 +335,19 @@
             <li class="team-list__item">
               <img
                 class="team-list__foto"
-                src="./img/img_masters/master-4_mb@1x.jpg"
+                srcset="
+                  ./img/img_masters/w/master-4_354.jpg 354w,
+                  ./img/img_masters/w/master-4_450.jpg 450w,
+                  ./img/img_masters/w/master-4_708.jpg 708w,
+                  ./img/img_masters/w/master-4_810.jpg 810w,
+                  ./img/img_masters/w/master-4_900.jpg 900w
+                "
+                sizes="(min-width: 1200) 810px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                src="./img/img_masters/master-4_450.jpg"
                 alt="михаил_ермаков"
-                width=""
-                height=""
+                width="450px"
+                height="460px"
+                loading="lazy"
               />
               <div class="team-list__name">
                 <h3 class="team-list__title">Михаил Ермаков</h3>
@@ -550,10 +589,10 @@
                   <use href="./img/sprates.svg#icon-check"></use>
                 </svg>
               </span>
-              <p class="checkbox-agreement">
+              <h4 class="checkbox-agreement">
                 Соглашаюсь с рассылкой и принимаю
-              <a class="contract" href="">Условия договора</a>
-              </p>
+                <a class="contract" href="">Условия договора</a>
+              </h4>
             </label>
           </div>
 
@@ -564,12 +603,12 @@
 
     <!-- мобильное миню -->
 
-     <div class="mobile is-hidden" data-menu>
+    <div class="mobile is-hidden" data-menu>
       <button class="mobile__btn" data-menu-close>
-            <svg class="mobile__iconc" width="40px" height="40px" aria-label="переключатель меню">
-              <use class="iconc__close" href="./img/sprates.svg#icon-close"></use>
-            </svg>
-          </button>
+        <svg class="mobile__iconc" width="40px" height="40px" aria-label="переключатель меню">
+          <use class="iconc__close" href="./img/sprates.svg#icon-close"></use>
+        </svg>
+      </button>
       <ul class="nav">
         <li class="nav__item">
           <a class="nav__link-activ" href="./index.html">Студия</a>
@@ -582,13 +621,14 @@
         </li>
       </ul>
       <ul class="contacts">
-         </li>
         <li class="contacts__item">
           <a class="contacts__link-tel" href="tel:+380961111111"> +38 096 111 11 11</a>
         </li>
         <li class="contacts__item">
           <a class="contacts__link" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+        </li>
       </ul>
+
       <ul class="mobil-social">
         <li class="mobil-social__item">
           <a class="mobil-social__link" href="">Instagram</a>

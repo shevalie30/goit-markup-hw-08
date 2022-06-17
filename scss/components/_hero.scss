@@ -16,31 +16,31 @@
   @media screen and (min-width: 480px) {
     max-width: 480px;
     background-image: linear-gradient(#2f303a66, #2f303a66), url(../img/hero/Header-1_mb.jpg);
-  }
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: linear-gradient(#2f303a66, #2f303a66), url(../img/hero/Header-1_mb@2x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(#2f303a66, #2f303a66), url(../img/hero/Header-1_mb@2x.jpg);
+    }
   }
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
     background-image: linear-gradient(#2f303a66, #2f303a66), url(../img/hero/Header-2_tb.jpg);
-  }
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: linear-gradient(#2f303a66, #2f303a66), url(../img/hero/Header-2_tb@2x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(#2f303a66, #2f303a66), url(../img/hero/Header-2_tb@2x.jpg);
+    }
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-    background-image: linear-gradient(#2f303a66, #2f303a66), url(../img/hero/Heander-3_dt.jpg);
+    max-width: 1600px;
+    background-image: linear-gradient(#2f303a66, #2f303a66), url(../img/hero/Header-3_dt.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
-  }
 
-  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  //   background-image: linear-gradient(#2f303a66, #2f303a66), url(../img/hero/Header-3-dt@2x.jpg);
-  // }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(#2f303a66, #2f303a66), url(../img/hero/Header-3_dt@2x.jpg);
+    }
+  }
 }
 
 .hero__title {
