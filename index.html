@@ -136,7 +136,7 @@
             <li class="job-list__item">
               <img
                 class="job-list__foto"
-                srcset="img/img_job/img@1x.jpg, img/img_job/img@2x.jpg"
+                srcset="./img/img_job/img@1x.jpg 1x, ./img/img_job/img@2x.jpg 2x"
                 src="./img/img_job/img@1x.jpg"
                 alt="програмирование"
                 width="370"
@@ -147,7 +147,7 @@
             <li class="job-list__item">
               <img
                 class="job-list__foto"
-                srcset="./img/img_job/img@1x-1.jpg, ./img/img_job/img@2x-1.jpg"
+                srcset="./img/img_job/img@1x-1.jpg 1x, ./img/img_job/img@2x-1.jpg 2x"
                 src="./img/img_job/img@1x-1.jpg"
                 alt="мобильный-разработки"
                 width="370"
@@ -158,7 +158,7 @@
             <li class="job-list__item">
               <img
                 class="job-list__foto"
-                srcset="./img/img_job/img@1x-2.jpg, ./img/img_job/img@2x-2.jpg"
+                srcset="./img/img_job/img@1x-2.jpg 1x, ./img/img_job/img@2x-2.jpg 2x"
                 src="./img/img_job/img@1x-2.jpg"
                 alt="дизайн"
                 width="370"
@@ -186,11 +186,13 @@
                   ./img/img_masters/w/master-1_810.jpg 810w,
                   ./img/img_masters/w/master-1_900.jpg 900w
                 "
-                sizes="(min-width: 1200) 810px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                sizes="(min-width: 1200px) 810px,
+                        (min-width: 768px) 354px,
+                        (max-width: 767px) 450px, 100vw"
                 src="./img/img_masters/w/master-1_450.jpg"
                 alt="игорь_демьяненко"
-                width="450px"
-                height="460px"
+                width="450"
+                height="460"
                 loading="lazy"
               />
               <div class="team-list__name">
@@ -238,11 +240,13 @@
                   ./img/img_masters/w/master-2_810.jpg 810w,
                   ./img/img_masters/w/master-2_900.jpg 900w
                 "
-                sizes="(min-width: 1200) 810px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                sizes="(min-width: 1200px) 810px,
+                        (min-width: 768px) 354px,
+                         (max-width: 767px) 450px, 100vw"
                 src="./img/img_masters/master-2_450.jpg"
                 alt="ольга_репина"
-                width="450px"
-                height="460px"
+                width="450"
+                height="460"
                 loading="lazy"
               />
               <div class="team-list__name">
@@ -290,11 +294,13 @@
                   ./img/img_masters/w/master-3_810.jpg 810w,
                   ./img/img_masters/w/master-3_900.jpg 900w
                 "
-                sizes="(min-width: 1200) 810px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                sizes="(min-width: 1200px) 810px,
+                        (min-width: 768px) 354px,
+                        (max-width: 767px) 450px, 100vw"
                 src="./img/img_masters/master-3_450.jpg"
                 alt="николай_тарасов"
-                width="450px"
-                height="460px"
+                width="450"
+                height="460"
                 loading="lazy"
               />
               <div class="team-list__name">
@@ -342,11 +348,13 @@
                   ./img/img_masters/w/master-4_810.jpg 810w,
                   ./img/img_masters/w/master-4_900.jpg 900w
                 "
-                sizes="(min-width: 1200) 810px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                sizes="(min-width: 1200px) 810px,
+                        (min-width: 768px) 354px,
+                        (max-width: 767px) 450px, 100vw"
                 src="./img/img_masters/master-4_450.jpg"
                 alt="михаил_ермаков"
-                width="450px"
-                height="460px"
+                width="450"
+                height="460"
                 loading="lazy"
               />
               <div class="team-list__name">
@@ -584,15 +592,15 @@
                 name="agreement"
                 id="agreement"
               />
-              <span class="custom-checkbox" id="agreement">
+              <span class="custom-checkbox">
                 <svg class="checkbox-iconc" width="11px" height="8px">
                   <use href="./img/sprates.svg#icon-check"></use>
                 </svg>
               </span>
-              <h4 class="checkbox-agreement">
+              <span class="checkbox-agreement">
                 Соглашаюсь с рассылкой и принимаю
                 <a class="contract" href="">Условия договора</a>
-              </h4>
+              </span>
             </label>
           </div>
 
