@@ -6,7 +6,6 @@
 
 .gallery-btn-aktiv {
   padding: 6px 22px;
-  margin-bottom: 15px;
   border: none;
   border-radius: 4px;
   background-color: var(--element-color);
@@ -60,6 +59,15 @@
 
 .gallery-item-btn {
   margin-right: 8px;
+  margin-bottom: 15px;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .gallery-list-filter {

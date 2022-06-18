@@ -353,7 +353,7 @@ ul {
   background-color: #c4c4c4;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .hero {
     max-width: 480px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#2f303a66), to(#2f303a66)), url(../img/hero/Header-1_mb.jpg);
@@ -361,7 +361,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#2f303a66), to(#2f303a66)), url(../img/hero/Header-1_mb@2x.jpg);
     background-image: linear-gradient(#2f303a66, #2f303a66), url(../img/hero/Header-1_mb@2x.jpg);
@@ -1298,7 +1298,6 @@ ul {
 
 .gallery-btn-aktiv {
   padding: 6px 22px;
-  margin-bottom: 15px;
   border: none;
   border-radius: 4px;
   background-color: var(--element-color);
@@ -1358,6 +1357,17 @@ ul {
 
 .gallery-item-btn {
   margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+.gallery-item-btn:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-item-btn {
+    margin-bottom: 0;
+  }
 }
 
 .gallery-list-filter {
@@ -1610,6 +1620,10 @@ ul {
   }
 }
 
+.footer-content {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) {
   .footer-content {
     margin-right: 165px;
@@ -1625,13 +1639,6 @@ ul {
 .footer-address {
   font-style: normal;
   margin-top: 20px;
-  margin-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-address {
-    margin-bottom: 0;
-  }
 }
 
 .footer-address-text {

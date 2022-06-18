@@ -13,7 +13,7 @@
 
   background-color: #c4c4c4;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     max-width: 480px;
     background-image: linear-gradient(#2f303a66, #2f303a66), url(../img/hero/Header-1_mb.jpg);
 
