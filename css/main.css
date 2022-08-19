@@ -80,6 +80,9 @@ ul {
 }
 
 .header {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   background: var(--brand-color);
   border-bottom: 1px solid #ececec;
@@ -341,7 +344,7 @@ ul {
 }
 
 .hero {
-  max-width: 1600px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
@@ -474,7 +477,7 @@ ul {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 450px;
+  width: 100%;
   padding: 40px;
   background-color: var(--brand-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
